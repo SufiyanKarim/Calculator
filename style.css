@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b4664;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 60vh;
+  width: 60%;
+  margin: 5% 0 0 20%;
+}
+
+.names {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  left: 28%;
+  top: 5%;
+}
+
+#calc {
+  margin: 0 0 20px 5px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 5px;
+}
+
+#p-theme {
+  font-size: 0.6rem;
+  margin-right: 20px;
+}
+
+.labels {
+  position: absolute;
+  bottom: 100%;
+  left: 75%;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+}
+
+.theme-btns {
+  background-color: #171f32;
+  padding: 0 5px 0 5px;
+  border-radius: 12px;
+}
+
+
+input[type='radio'] {
+  cursor: pointer;
+  
+}
+
+input[type='radio']:checked {
+  accent-color: rgb(204, 66, 45);
+  
+}
+
+
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper input {
+  width: 45%;
+  min-width: 45%;
+  height: 60px;
+  background-color: #171f32;
+  border: none;
+  text-align: right;
+  font-size: 22px;
+  margin: 15px 0;
+  border: 2px solid #171f32;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(5, 60px);
+  background-color: #171f32;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 0.6rem;
+}
+
+.buttons .btn {
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.btn {
+  color: #444958;
+  box-shadow: 0 4px 0 #b5a399;
+}
+
+.del-btn {
+  color: #e9e3db;
+  background-color: #657199;
+  box-shadow: 0 4px 0 #313e5b;
+}
+
+
+.reset-btn {
+  grid-column: span 2;
+  background-color: #657199;
+  color: #e9e3db;
+  box-shadow: 0 4px 0 #313e5b;
+}
+
+.equal-btn {
+  grid-column: span 2;
+  background-color: #d14031;
+  color: #e9e3db;
+  box-shadow: 0 4px 0 #852925;
+}
